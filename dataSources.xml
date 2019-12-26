@@ -1,0 +1,42 @@
+<application>
+  <component name="dataSourceStorage" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="TEST @mssql-test.devinotest.local" uuid="a116c5be-b158-429e-807b-78dd0ce07ded">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://mssql-test.devinotest.local</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="DEV @mssql-dev.devinotest.local" uuid="d20a9fb1-36ac-4351-ba4b-9f35bd3bdf16">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://mssql-dev.devinotest.local</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="@mongo-01.devinotest.local" uuid="d3a9e9e8-4683-4aa1-a413-f6f6a352a714">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb://mongo-01.devinotest.local:27017</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="PROD @bss-mssql-np.devinoprod.local" uuid="181da1ea-6e95-44a1-99e4-d60a83dd9947">
+      <driver-ref>sqlserver.jtds</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>net.sourceforge.jtds.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:jtds:sqlserver://bss-mssql-np.devinoprod.local</jdbc-url>
+      <driver-properties>
+        <property name="applicationName" value="DataGrip" />
+        <property name="loginTimeout" value="30" />
+        <property name="trustServerCertificate" value="false" />
+        <property name="encrypt" value="true" />
+        <property name="hostNameInCertificate" value="*.database.windows.net" />
+        <property name="DOMAIN" value="DEVINORU" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="push@clickhouse-01.devinotest.local" uuid="f11caab0-fc71-4608-a9e7-b7acce34b0b3">
+      <driver-ref>clickhouse</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>ru.yandex.clickhouse.ClickHouseDriver</jdbc-driver>
+      <jdbc-url>jdbc:clickhouse://clickhouse-01.devinotest.local:8123/push</jdbc-url>
+    </data-source>
+  </component>
+</application>
