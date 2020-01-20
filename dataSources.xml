@@ -32,11 +32,17 @@
         <property name="DOMAIN" value="DEVINORU" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="push@clickhouse-01.devinotest.local" uuid="f11caab0-fc71-4608-a9e7-b7acce34b0b3">
+    <data-source source="LOCAL" name="@clickhouse-01.devinotest.local" uuid="f11caab0-fc71-4608-a9e7-b7acce34b0b3">
       <driver-ref>clickhouse</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>ru.yandex.clickhouse.ClickHouseDriver</jdbc-driver>
-      <jdbc-url>jdbc:clickhouse://clickhouse-01.devinotest.local:8123/push</jdbc-url>
+      <jdbc-url>jdbc:clickhouse://clickhouse-01.devinotest.local:8123</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="@clickhouse-02.devinotest.local" uuid="6a8e59ad-22fb-445c-882a-06a6f8ccc0cb">
+      <driver-ref>clickhouse</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>ru.yandex.clickhouse.ClickHouseDriver</jdbc-driver>
+      <jdbc-url>jdbc:clickhouse://clickhouse-02.devinotest.local:8123</jdbc-url>
     </data-source>
   </component>
 </application>
