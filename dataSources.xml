@@ -18,9 +18,10 @@
       <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
       <jdbc-url>mongodb://mongo-01.devinotest.local:27017</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="PROD @bss-mssql-np.devinoprod.local" uuid="181da1ea-6e95-44a1-99e4-d60a83dd9947">
+    <data-source source="LOCAL" name="PROD @bss-mssql-np.devinoprod.local" read-only="true" uuid="181da1ea-6e95-44a1-99e4-d60a83dd9947">
       <driver-ref>sqlserver.jtds</driver-ref>
       <synchronize>true</synchronize>
+      <isolation>1</isolation>
       <jdbc-driver>net.sourceforge.jtds.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:jtds:sqlserver://bss-mssql-np.devinoprod.local</jdbc-url>
       <driver-properties>
@@ -43,6 +44,12 @@
       <synchronize>true</synchronize>
       <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
       <jdbc-url>mongodb://mongo-02.devinotest.local:27017</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="@t-mongo01.devinotest.local" uuid="3ebb76e8-ada2-4979-b284-a19d4a33e57e">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb://t-mongo01.devinotest.local:27017</jdbc-url>
     </data-source>
   </component>
 </application>
